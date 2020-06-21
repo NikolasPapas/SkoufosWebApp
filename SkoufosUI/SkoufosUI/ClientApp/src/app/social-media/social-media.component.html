@@ -1,0 +1,26 @@
+<mat-card class="row social-media">
+    <div class="col-12 row">
+        <div class="col-auto socialMediaImg" *ngIf="facebook">
+            <a [href]="facebookLink + facebook.link" target="_blank" rel="noopener"
+                title="view {{ facebook.user }} on facebook">
+                Facebook
+            </a>
+        </div>
+        <div class="col-auto socialMediaImg" *ngIf="instagram">
+            <a [href]="instagramLink + instagram.link" target="_blank" rel="noopener"
+                title="view {{ instagram.user }} on instagram">
+                Instagram
+            </a>
+        </div>
+        <div class="col-auto socialMediaImg" *ngIf="gmail">
+            <a [href]="gmailLink + gmail.link" target="_blank" rel="noopener" title="view {{ gmail.user }} on gmail">
+                Gmail
+            </a>
+        </div>
+        <div class="col-auto socialMediaImg" *ngIf="map">
+            <a [href]="mapLink + map.link" target="_blank" rel="noopener" title="view {{ map.user }} on map">
+                Map
+            </a>
+        </div>
+    </div>
+</mat-card>

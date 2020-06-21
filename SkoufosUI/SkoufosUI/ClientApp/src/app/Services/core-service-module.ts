@@ -1,7 +1,7 @@
 import { ModuleWithProviders, NgModule, Optional, SkipSelf } from '@angular/core';
-import { UiNotificationService } from './ui-notification.service';
 import { HttpPostService } from './http-post.service';
 import { MetaData } from './urlBuilder';
+import { UiNotificationService } from './ui-notification.service';
 
 //
 //

@@ -16,6 +16,7 @@ import { NotificationBarModule } from './notification-bar/notification-bar.modul
 import { TranslateModule } from '@ngx-translate/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MAT_DATE_LOCALE } from '@angular/material/core';
+import { SocialMediaComponent } from './social-media/social-media.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { MAT_DATE_LOCALE } from '@angular/material/core';
     HomeComponent,
     CounterComponent,
     FetchDataComponent,
+    SocialMediaComponent
   ],
   imports: [
     CoreServiceModule.forRoot(),

@@ -1,10 +1,10 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { interval } from 'rxjs';
 import { take, takeUntil } from 'rxjs/operators';
-import { UiNotificationService } from 'src/app/services/ui-notification.service';
 import { UiNotification } from './ui-notification';
 import { NotificationLevel } from '../common/types/notification-level';
 import { BaseComponent } from '../common/base/baseComponent';
+import { UiNotificationService } from '../Services/ui-notification.service';
 
 @Component({
     selector: 'app-notification-bar',

@@ -2,9 +2,9 @@ import { HttpClient, HttpErrorResponse, HttpResponse} from '@angular/common/http
 import { Injectable } from '@angular/core';
 import { Observable, of } from 'rxjs';
 import { catchError, map } from 'rxjs/operators';
-import { UiNotificationService } from './ui-notification.service';
 import { MetaData } from './urlBuilder';
 import { NotificationLevel } from '../common/types/notification-level';
+import { UiNotificationService } from './ui-notification.service';
 
 
 @Injectable()

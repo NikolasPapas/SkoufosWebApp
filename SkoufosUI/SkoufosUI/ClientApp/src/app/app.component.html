@@ -1,7 +1,18 @@
 <body>
-  <app-nav-menu></app-nav-menu>
+  <app-nav-menu [title]="title" [TabList]="TabList" (selectedTab)="selectedTab($event)"></app-nav-menu>
   <div class="container">
+
+    <app-home *ngIf="selectedTabIndex === 'Home'"></app-home>
+    <app-counter-component *ngIf="selectedTabIndex === 'Counter'"></app-counter-component>
+    <app-fetch-data *ngIf="selectedTabIndex === 'Fetch Data'"></app-fetch-data>
     <router-outlet></router-outlet>
+
+    <app-social-media 
+    [facebook]="{link: 'aa', user: 'Skoufos' }"
+    [instagram]="{link: 'aa', user: 'Skoufos'}"
+    [gmail]="{link: 'aa', user: 'Skoufos', company: true}"
+    [map]="{link:'aa',user:'skoufos'}"></app-social-media>
+
   </div>
-<app-notification-bar class="appNotificationBar"></app-notification-bar>
+  <app-notification-bar class="appNotificationBar"></app-notification-bar>
 </body>
